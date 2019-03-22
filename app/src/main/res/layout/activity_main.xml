@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="#5DE4DE"
     tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/make_everyday_decision_easier"
+    android:textColor="#FFFF"
+    android:textAlignment="center"
+    android:textSize="25sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    android:background="#612AA4" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/dd"
+        android:src="@drawable/img1" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="70dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/ask"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:layout_marginStart="70dp" />
+
 </RelativeLayout>
+
